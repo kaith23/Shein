@@ -1,0 +1,117 @@
+html,
+body {
+  margin: 0px;
+  overflow-x: hidden;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  overflow-y: auto;
+  height: 100%;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(246, 246, 246);
+  height: 4rem;
+  position: sticky;
+  top: 0;
+  padding: 0 2rem;
+  z-index: 10;
+}
+.nav > .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+}
+.nav > .navactions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.nav > .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.nav > .logo > img {
+  width: 130px;
+}
+.nav > .navactions {
+  z-index: 5;
+}
+.nav > .navactions > button {
+  border: none;
+  background-color: transparent;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.nav > .navactions > .bagbutton:hover {
+  background-color: rgb(229, 229, 229) !important;
+}
+.nav > .navactions > button > img {
+  width: 20px;
+}
+#productgallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+#productgallery > div {
+  position: relative;
+  width: 100%;
+}
+#productgallery > div > img {
+  width: 100%;
+}
+
+.infodiv {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.actiondiv {
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
+  align-items: center;
+  padding-right: 0.5rem;
+}
+.actiondiv > input {
+  width: 20px;
+  height: 20px;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.actiondiv > input:hover {
+  background-color: rgb(229, 229, 229) !important;
+}
+.textdiv {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.textdiv > p:nth-of-type(1) {
+  margin: 0;
+  font-size: 13px;
+}
+
+.textdiv > p:nth-of-type(2) {
+  color: rgb(255, 68, 0);
+  margin: 0;
+}
+
+#cartlist {
+  min-height: 5rem;
+  max-height: 500px;
+  overflow-y: auto;
+}

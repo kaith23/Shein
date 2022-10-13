@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
+  </head>
+
+  <body>
+    <div class="nav">
+      <div class="navbar">
+        <h5>WOMEN</h5>
+        <h5>KIDS</h5>
+        <h5>MEN</h5>
+        <h5>BEAUTTY</h5>
+      </div>
+      <div class="logo">
+        <img
+          src="https://1000logos.net/wp-content/uploads/2021/05/Shein-logo.png"
+          alt=""
+        />
+      </div>
+      <div class="navactions">
+        <button class="bagbutton">
+            <img src="./assets/user.png" alt="" />
+          </button>
+        <button class="bagbutton" id="myBtn">
+          <img src="./assets/bag.png" alt="" />
+        </button>
+      </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="modal-title">
+            <img class="bagicon" src="./assets/bag.png" alt="">
+            <p class="title">My Shopping Bag</p>
+          </div>
+        <div id="cartlist"></div>
+      </div>
+    </div>
+
+    <!-- ------------IMAGE GALLERY------------ -->
+    <div id="productgallery"></div>
+  </body>
+
+  <script src="./data/data.js"></script>
+  <script src="./js/modal.js"></script>
+</html>
