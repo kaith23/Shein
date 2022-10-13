@@ -105,6 +105,19 @@ products.forEach((product, index) => {
 
 function loopCart(){
     
+    if (cartproducts.length === 0){
+        let noDataDiv = document.createElement('div')
+        noDataDiv.className = 'noDataDiv'
+
+        let noDataP = document.createElement('p');
+        let noDataText = document.createTextNode("Cart is empty.")
+        noDataP.appendChild(noDataText)
+        noDataDiv.appendChild(noDataP);
+
+        cartlist.appendChild(noDataDiv);
+        
+    }
+
     cartproducts.forEach((cproduct, index) => {
         let cartdiv = document.createElement('div')
         cartdiv.className = 'cartdiv'
