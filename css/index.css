@@ -16,6 +16,21 @@ body {
   padding: 0 2rem;
   z-index: 10;
 }
+@media screen and (min-width: 200px) {
+  .nav {
+    justify-content: flex-end;
+  }
+}
+@media screen and (min-width: 600px) {
+  .nav {
+    justify-content: flex-end;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .nav {
+    justify-content: space-between;
+  }
+}
 .nav > .navbar {
   display: flex;
   flex-direction: row;
@@ -24,6 +39,21 @@ body {
   gap: 2rem;
   position: relative;
 }
+@media screen and (min-width: 200px) {
+  .nav > .navbar {
+    display: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  .nav > .navbar {
+    display: none;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .nav > .navbar {
+    display: flex;
+  }
+}
 .nav > .navactions {
   display: flex;
   flex-direction: row;
@@ -31,6 +61,7 @@ body {
   align-items: center;
   gap: 0.5rem;
 }
+
 .nav > .logo {
   position: absolute;
   top: 0;
@@ -40,6 +71,21 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+@media screen and (min-width: 200px) {
+  .nav > .logo {
+    justify-content: start;
+  }
+}
+@media screen and (min-width: 600px) {
+  .nav > .logo {
+    justify-content: start;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .nav > .logo {
+    justify-content: center;
+  }
 }
 .nav > .logo > img {
   width: 130px;
@@ -64,6 +110,21 @@ body {
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
   padding: 1rem;
+}
+@media screen and (min-width: 200px) {
+  #productgallery {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) ;
+  }
+}
+@media screen and (min-width: 600px) {
+  #productgallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media screen and (min-width: 1000px) {
+  #productgallery {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
 #productgallery > div {
   position: relative;
